@@ -1,3 +1,5 @@
+# Lecture: https://youtu.be/Qwg4b6bKyW0
+
 """
 You are given an undirected graph with its maximum degree (the degree of a node
 is the number of edges connected to the node).

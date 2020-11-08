@@ -22,3 +22,21 @@ class GraphNode:
 def color_graph(graph, colors):
     # Your code here
 
+# Glenna: We didn't get to demonstration_1.py today, but here's some starter code to build a graph and test
+
+a = GraphNode('a')
+b = GraphNode('b')
+c = GraphNode('c')
+
+a.neighbors.add(b)
+b.neighbors.add(a)
+
+b.neighbors.add(c)
+c.neighbors.add(b)
+
+graph = [a, b, c]
+
+color_graph(graph, ["red", "blue", "green"])
+
+for node in graph:
+    print(f"{node.label} has color {node.color}. Neighbors: {[n.label for n in node.neighbors]}")
